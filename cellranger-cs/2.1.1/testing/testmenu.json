@@ -1,0 +1,3995 @@
+[
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "aggregator", 
+                "CR-120-AR01", 
+                "mouse 3T3 mapped normalization"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR02", 
+                "human 293T with user-defined value"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR03", 
+                "human metasample"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR04", 
+                "human equal mix Jurkat 293T"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR05", 
+                "barnyard"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR06", 
+                "barnyard"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR07", 
+                "mouse 3T3 single sample"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR08", 
+                "mouse 3T3 raw normalization"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR09", 
+                "mouse 3T3 no normalization"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR10", 
+                "mouse 3T3 mapped normalization no secondary analysis"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR11", 
+                "mouse 3T3 raw normalization no secondary analysis"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR12", 
+                "mouse 3T3 no normalization no secondary analysis"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR13", 
+                "chemistry mismatch"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR14", 
+                "reference mismatch"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR15", 
+                "reference version mismatch"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR16", 
+                "one count one aggregator"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR17", 
+                "mouse 3T3 mapped normalization determinism test"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR18", 
+                "mouse 3T3 mapped normlization same library id space"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR19", 
+                "mouse 3T3 mapped normlization udfs"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR20", 
+                "mouse neurons 3pv2 normalization none"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR21", 
+                "mouse neurons 3pv2 normalization raw"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR22", 
+                "mouse neurons 3pv2 normalization mapped"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-AR23", 
+                "mouse 3T3 mapped normlization same library id"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-ARF1", 
+                "fuzzer human sc3pv1"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-ARF2", 
+                "fuzzer barnyard sc3pv1"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-ARF3", 
+                "fuzzer human sc3pv2"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-ARF4", 
+                "fuzzer barnyard sc3pv2"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-ARF5", 
+                "fuzzer human sc3pv1 one empty"
+            ], 
+            [
+                "aggregator", 
+                "CR-120-ARF6", 
+                "fuzzer human sc3pv2 one empty"
+            ], 
+            [
+                "aggregator", 
+                "CR-121-AR01", 
+                "3 mouse counts"
+            ], 
+            [
+                "aggregator", 
+                "CR-121-AR02", 
+                "2 mouse counts - first has 2 gem groups"
+            ], 
+            [
+                "aggregator", 
+                "CR-121-AR03", 
+                "1 mouse counts with 3 gem groups"
+            ], 
+            [
+                "aggregator", 
+                "CR-121-AR04", 
+                "4 mouse counts"
+            ], 
+            [
+                "aggregator", 
+                "CR-121-AR05", 
+                "2 mouse counts with 2 gem groups each"
+            ], 
+            [
+                "aggregator", 
+                "CR-200-AR01", 
+                "1 count with secondary and one without"
+            ], 
+            [
+                "aggregator", 
+                "CR-200-AR02", 
+                "1 count with secondary and one without - barnyard"
+            ], 
+            [
+                "aggregator", 
+                "CR-200-AR03", 
+                "1 count nosecondary aggr nosecondary"
+            ], 
+            [
+                "aggregator", 
+                "CR-200-AR04", 
+                "1 count nosecondary aggr nosecondary - barnyard"
+            ], 
+            [
+                "aggregator", 
+                "CR-201-AR01", 
+                "barnyard aggr with no cells for one genome"
+            ], 
+            [
+                "aggregator", 
+                "CR-201-AR02", 
+                "eleven mouse samples 3pv2 normalization mapped"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR01", 
+                "PBMC SC5P-PE"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR02", 
+                "barnyard SC5P-PE"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR03", 
+                "PBMC SC5P-R2"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR04", 
+                "barnyard SC5P-R2"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR06", 
+                "PBMCs SC3Pv2 and SC5P-PE"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR07", 
+                "PBMCs SC3Pv2 and SC5P-R2"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR08", 
+                "PBMCs SC3Pv2 and SC5P-R1"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR09", 
+                "PBMCs SC5P-PE"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR10", 
+                "PBMCs SC5P-R2"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR11", 
+                "PBMCs single SC5P-R1"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR12", 
+                "PBMCs SC5P-PE and SC5P-R2"
+            ], 
+            [
+                "aggregator", 
+                "CR-210-AR13", 
+                "CRC_Us"
+            ]
+        ], 
+        "Name": "Aggr pipeline"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "custom", 
+                "CR-CUSTOM-01", 
+                "SC3Pv1 dense matrix sc3pv1"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-02", 
+                "SC3Pv1 bcldirect hiseq"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-03", 
+                "SC3Pv1 bcldirect miseq"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-04", 
+                "SC3Pv2 human PBMC dense matrix"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-05", 
+                "SC3Pv2 bcldirect hiseq4k"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-06", 
+                "SC3Pv2 bcldirect miseq"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-07", 
+                "SC3Pv2 mkfastq hiseq4k"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-08", 
+                "SC3Pv2 mkfastq miseq"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-09", 
+                "SC3Pv2 demux 27547 and mkfastq 29760 metasample"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-10", 
+                "SC3Pv2 32 base human reads"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-11", 
+                "SC3Pv2 32 base mouse reads"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-12", 
+                "SC3Pv2 32 base barnyard reads"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-13", 
+                "SC3Pv2 mkfastq hiseq4k no index read"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-14", 
+                "SC3Pv1 bcldirect miseq no index read"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-15", 
+                "SC3Pv2 mkfastq novaseq barnyard"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-16", 
+                "SC3Pv2 mkfastq novaseq PBMCs"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-17", 
+                "SC5P-PE mkfastq barnyard 1K"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-18", 
+                "SC5P-PE mkfastq pbmc 1K"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-19", 
+                "SC5P-PE mkfastq barnyard 10K #2"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-20", 
+                "SC5P-PE mkfastq pbmc 1K #2"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-21", 
+                "SC5P-R2 mkfastq barnyard 1K"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-22", 
+                "SC5P-R2 mkfastq pbmc 1K"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-23", 
+                "SC5P-R2 mkfastq barnyard 10K #2"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-24", 
+                "SC5P-R2 mkfastq pbmc 1K #2"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-37", 
+                "SC3Pv2 4k PBMCs from a Healthy Donor - chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-38", 
+                "SC5P-PE mkfastq pbmc 1K - chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-39", 
+                "SC3Pv1 3k PBMCs from a Healthy Donor"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-40", 
+                "SC3Pv1 3k PBMCs from a Healthy Donor - chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-41", 
+                "SC3Pv2 4k PBMCs from a Healthy Donor - incorrect chemistry specified - v1"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-42", 
+                "SC3Pv2 4k PBMCs from a Healthy Donor - incorrect chemistry specified - 5P"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-43", 
+                "SC5P-PE mkfastq pbmc 1K - incorrect chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-44", 
+                "SC3Pv1 3k PBMCs from a Healthy Donor - incorrect chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-45", 
+                "SC5P-PE mkfastq pbmc 1K r1 r2 len 100 in fastqs"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-46", 
+                "SC5P-PE mkfastq pbmc 1K r1 r2 len 100 in flags"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-47", 
+                "SC5P-R1 PBMC 1k miseq"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-48", 
+                "SC5P-R1 PBMC 1k miseq - chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-49", 
+                "SC5P-R2 mkfastq pbmc 1K - chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-50", 
+                "SC5P-PE mkfastq pbmc 1K - 5P chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-51", 
+                "SC3Pv1 3k PBMCs from a Healthy Donor - 3P chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-52", 
+                "SCVDJ CRC_S_1_UB"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-53", 
+                "SCVDJ CRC_S_1_UT"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-54", 
+                "SCVDJ CRC_S_1_B"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-55", 
+                "SC3Pv2 4k PBMCs from a Healthy Donor - 3P chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-56", 
+                "SC3Pv1 3k PBMCs from a Healthy Donor - 3P chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-57", 
+                "SC5P-R2 mkfastq pbmc 1K - 5P chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-58", 
+                "SC5P-R1 PBMC 1k miseq - 5P chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-59", 
+                "SC5P-R1 PBMC 1k miseq - fiveprime chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-60", 
+                "SC3Pv2 4k PBMCs from a Healthy Donor - threeprime chemistry specified"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-65", 
+                "SCVDJ CRC_1_U"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-66", 
+                "SCVDJ CRC_2_U"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-69", 
+                "TR pan T cells isolated from mononuclear cells of a healthy donor run as count"
+            ],
+            [
+                "custom",
+                "CR-CUSTOM-70",
+                "SC3Pv2 SRA sample SRR6334436"
+            ]
+        ], 
+        "Name": "Custom tests - count pipeline"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "fuzzer", 
+                "0", 
+                "small_test"
+            ], 
+            [
+                "fuzzer", 
+                "1", 
+                "low_bc_diversity"
+            ], 
+            [
+                "fuzzer", 
+                "2", 
+                "cycle_failure"
+            ], 
+            [
+                "fuzzer", 
+                "3", 
+                "med_error_rate"
+            ], 
+            [
+                "fuzzer", 
+                "4", 
+                "barnyard_pileup_reads"
+            ], 
+            [
+                "fuzzer", 
+                "5", 
+                "add_whitelist_contamination"
+            ], 
+            [
+                "fuzzer", 
+                "6", 
+                "barnyard_zero_aligned_reads"
+            ], 
+            [
+                "fuzzer", 
+                "7", 
+                "few_aligned_reads"
+            ], 
+            [
+                "fuzzer", 
+                "8", 
+                "zero_aligned_reads"
+            ], 
+            [
+                "fuzzer", 
+                "9", 
+                "no_umi_div"
+            ], 
+            [
+                "fuzzer", 
+                "10", 
+                "no_barcode_div"
+            ], 
+            [
+                "fuzzer", 
+                "11", 
+                "pileup_reads"
+            ], 
+            [
+                "fuzzer", 
+                "12", 
+                "few_cells"
+            ], 
+            [
+                "fuzzer", 
+                "13", 
+                "min_bc_div"
+            ], 
+            [
+                "fuzzer", 
+                "14", 
+                "rc_bc"
+            ], 
+            [
+                "fuzzer", 
+                "15", 
+                "extend_rna"
+            ], 
+            [
+                "fuzzer", 
+                "16", 
+                "extend_umi"
+            ], 
+            [
+                "fuzzer", 
+                "54", 
+                "all_read_lengths"
+            ], 
+            [
+                "fuzzer", 
+                "57", 
+                "all_read_lengths_except_0"
+            ], 
+            [
+                "fuzzer", 
+                "60", 
+                "umi_same"
+            ]
+        ], 
+        "Name": "Fuzzer - count sc3pv1 tests"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "fuzzer", 
+                "17", 
+                "small_test_v2"
+            ], 
+            [
+                "fuzzer", 
+                "18", 
+                "low_bc_diversity_v2"
+            ], 
+            [
+                "fuzzer", 
+                "19", 
+                "cycle_failure_v2"
+            ], 
+            [
+                "fuzzer", 
+                "20", 
+                "med_error_rate_v2"
+            ], 
+            [
+                "fuzzer", 
+                "21", 
+                "barnyard_pileup_reads_v2"
+            ], 
+            [
+                "fuzzer", 
+                "22", 
+                "add_whitelist_contamination_v2"
+            ], 
+            [
+                "fuzzer", 
+                "23", 
+                "barnyard_zero_aligned_reads_v2"
+            ], 
+            [
+                "fuzzer", 
+                "24", 
+                "few_aligned_reads_v2"
+            ], 
+            [
+                "fuzzer", 
+                "25", 
+                "zero_aligned_reads_v2"
+            ], 
+            [
+                "fuzzer", 
+                "26", 
+                "no_umi_div_v2"
+            ], 
+            [
+                "fuzzer", 
+                "27", 
+                "no_barcode_div_v2"
+            ], 
+            [
+                "fuzzer", 
+                "28", 
+                "pileup_reads_v2"
+            ], 
+            [
+                "fuzzer", 
+                "29", 
+                "few_cells_v2"
+            ], 
+            [
+                "fuzzer", 
+                "30", 
+                "min_bc_div_v2"
+            ], 
+            [
+                "fuzzer", 
+                "31", 
+                "rc_bc_v2"
+            ], 
+            [
+                "fuzzer", 
+                "32", 
+                "extend_rna_v2"
+            ], 
+            [
+                "fuzzer", 
+                "33", 
+                "extend_umi_v2"
+            ], 
+            [
+                "fuzzer", 
+                "55", 
+                "all_read_lengths_v2"
+            ], 
+            [
+                "fuzzer", 
+                "58", 
+                "all_read_lengths_except_0_v2"
+            ], 
+            [
+                "fuzzer", 
+                "61", 
+                "umi_same_v2"
+            ]
+        ], 
+        "Name": "Fuzzer - count sc3pv2 tests"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "fuzzer", 
+                "63", 
+                "small_test_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "64", 
+                "low_bc_diversity_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "65", 
+                "cycle_failure_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "66", 
+                "med_error_rate_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "67", 
+                "barnyard_pileup_reads_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "68", 
+                "add_whitelist_contamination_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "69", 
+                "barnyard_zero_aligned_reads_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "70", 
+                "few_aligned_reads_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "71", 
+                "zero_aligned_reads_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "72", 
+                "no_umi_div_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "73", 
+                "no_barcode_div_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "74", 
+                "pileup_reads_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "75", 
+                "few_cells_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "76", 
+                "min_bc_div_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "77", 
+                "rc_bc_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "78", 
+                "extend_rna_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "79", 
+                "extend_rna2_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "80", 
+                "cycle_failure_umi_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "81", 
+                "rna_random_Ns_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "82", 
+                "low_base_qv_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "83", 
+                "random_umi_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "84", 
+                "med_error_rate_low_qv_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "85", 
+                "all_read_lengths_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "86", 
+                "all_read_lengths_except_0_sc5ppe"
+            ], 
+            [
+                "fuzzer", 
+                "87", 
+                "umi_same_sc5ppe"
+            ]
+        ], 
+        "Name": "Fuzzer - count sc5ppe tests"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "fuzzer", 
+                "88", 
+                "small_test_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "89", 
+                "low_bc_diversity_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "90", 
+                "cycle_failure_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "91", 
+                "med_error_rate_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "92", 
+                "add_whitelist_contamination_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "93", 
+                "few_aligned_reads_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "94", 
+                "zero_aligned_reads_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "95", 
+                "no_umi_div_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "96", 
+                "no_barcode_div_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "97", 
+                "pileup_reads_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "98", 
+                "few_cells_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "99", 
+                "min_bc_div_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "100", 
+                "rc_bc_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "101", 
+                "extend_rna_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "102", 
+                "cycle_failure_umi_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "103", 
+                "rna_random_Ns_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "104", 
+                "low_base_qv_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "105", 
+                "random_umi_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "106", 
+                "med_error_rate_low_qv_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "107", 
+                "all_read_lengths_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "108", 
+                "all_read_lengths_except_0_sc5pr2"
+            ], 
+            [
+                "fuzzer", 
+                "109", 
+                "umi_same_sc5pr2"
+            ]
+        ], 
+        "Name": "Fuzzer - count sc5pr2 tests"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs_cum_frac": {
+                "Low": 0.8, 
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_assembly_contig_pair_productive_full_len_bc_frac": {
+                "Low": 0.54, 
+                "HumanName": "Cells With Productive V-J Spanning Pair"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_sequencing_efficiency": {
+                "Low": 0.3, 
+                "HumanName": "Sequencing Efficiency"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_all_vj_exact_no_extras_adjusted_paired_cdr_bc_frac": {
+                "Low": 0.98, 
+                "HumanName": "Cell sequence accuracy"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_good_bc_frac": {
+                "Low": 0.8, 
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/chemistry_name": {
+                "HumanName": "Chemistry"
+            }, 
+            "sampleid": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs": {
+                "HumanName": "Estimated Number of Cells"
+            }, 
+            "SHA": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_inferred_all_cdrs_detected_adjusted_paired_bc_frac": {
+                "Low": 0.9, 
+                "HumanName": "Inferred cell clonotype accuracy"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_recombinome_mapped_read_pairs_frac": {
+                "Low": 0.5, 
+                "HumanName": "Reads Mapped to Any V(D)J Gene"
+            }, 
+            "comments": {}, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_total_raw_read_pairs_per_filtered_bc": {
+                "Low": 5000, 
+                "HumanName": "Mean Read Pairs per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}
+        }, 
+        "TestDefList": [
+            [
+                "fuzzer", 
+                "34", 
+                "small_test_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "35", 
+                "low_bc_diversity_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "36", 
+                "cycle_failure_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "37", 
+                "med_error_rate_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "38", 
+                "add_whitelist_contamination_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "39", 
+                "few_aligned_reads_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "40", 
+                "zero_aligned_reads_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "41", 
+                "no_umi_div_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "42", 
+                "no_barcode_div_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "43", 
+                "pileup_reads_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "44", 
+                "few_cells_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "45", 
+                "min_bc_div_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "46", 
+                "rc_bc_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "47", 
+                "extend_rna_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "48", 
+                "extend_rna2_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "49", 
+                "cycle_failure_umi_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "50", 
+                "rna_random_Ns_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "51", 
+                "low_base_qv_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "52", 
+                "random_umi_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "53", 
+                "med_error_rate_low_qv_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "56", 
+                "all_read_lengths_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "59", 
+                "all_read_lengths_except_0_vdj"
+            ], 
+            [
+                "fuzzer", 
+                "62", 
+                "umi_same_vdj"
+            ]
+        ], 
+        "Name": "Fuzzer - VDJ pipeline"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "reanalyzer", 
+                "CR-120-RE01", 
+                "default"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-120-RE02", 
+                "3D tsne"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-120-RE03", 
+                "fast downsampled"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-120-RE04", 
+                "slow"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-120-RE05", 
+                "random seed"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-120-RE06", 
+                "default determinism test"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-120-RE07", 
+                "2D all lower bounds"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-120-RE08", 
+                "2D upper bounds"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-120-RE09", 
+                "aggegator neurons default"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-120-RE10", 
+                "empty data set"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-130-RE01", 
+                "graph cluster neighbors=500"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-130-RE02", 
+                "graph cluster neighbors=2"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-130-RE03", 
+                "graph cluster neighbors=1"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-130-RE04", 
+                "aggregator default with user defined fields"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-130-RE05", 
+                "omit params"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-200-RE01", 
+                "default on force-cell input"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-200-RE02", 
+                "default on nosecondary input"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-200-RE03", 
+                "default on full gene list file"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-200-RE04", 
+                "default on full barcode list file"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-200-RE05", 
+                "default force cells"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-200-RE06", 
+                "default on 20K genes file"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-200-RE07", 
+                "default on 4000 barcodes file"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-210-RE01", 
+                "default on SC5P-PE"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-210-RE02", 
+                "default on barcodes file from LCB"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-210-RE03", 
+                "default on SC5P-R2"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-210-RE04", 
+                "default - exclude top 4 genes"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-210-RE05", 
+                "default - include 20K genes but exclude top 4"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-210-RE06", 
+                "default - 11 count aggr"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-210-RE07", 
+                "default - PBMCs SC5P-PE aggr"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-210-RE08", 
+                "default - PBMCs SC5P-R2 aggr"
+            ], 
+            [
+                "reanalyzer", 
+                "CR-210-RE09", 
+                "default - SC5P-R1 aggr"
+            ]
+        ], 
+        "Name": "Reanalyze pipeline"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "standard", 
+                "CR-100-01", 
+                "SC3Pv1 human PBMC"
+            ], 
+            [
+                "standard", 
+                "CR-100-02", 
+                "SC3Pv1 human 4500 PBMCs"
+            ], 
+            [
+                "standard", 
+                "CR-100-03", 
+                "SC3Pv1 human 16k PBMCs"
+            ], 
+            [
+                "standard", 
+                "CR-100-04", 
+                "SC3Pv1 human 1:1 Jurkat:293T"
+            ], 
+            [
+                "standard", 
+                "CR-100-05", 
+                "SC3Pv1 1:1 3T3:293T Barnyard"
+            ], 
+            [
+                "standard", 
+                "CR-100-06", 
+                "SC3Pv1 mouse"
+            ], 
+            [
+                "standard", 
+                "CR-100-07", 
+                "SC3Pv1 human PBMC vs fruitfly ref"
+            ], 
+            [
+                "standard", 
+                "CR-100-08", 
+                "SC3Pv1 human PBMC vs yeast ref"
+            ], 
+            [
+                "standard", 
+                "CR-100-09", 
+                "SC3Pv1 human PBMC vs mouse ref"
+            ], 
+            [
+                "standard", 
+                "CR-100-10", 
+                "SC3Pv1 mouse vs human ref"
+            ], 
+            [
+                "standard", 
+                "CR-100-11", 
+                "SC3Pv1 human PBMC vs human and mouse ref"
+            ], 
+            [
+                "standard", 
+                "CR-100-12", 
+                "SC3Pv1 mouse vs human and mouse ref"
+            ], 
+            [
+                "standard", 
+                "CR-100-13", 
+                "SC3Pv1 ERCC"
+            ], 
+            [
+                "standard", 
+                "CR-100-14", 
+                "SC3Pv1 human PBMC mock ref with 180K genes"
+            ], 
+            [
+                "standard", 
+                "CR-100-15", 
+                "SC3Pv1 human PBMC null cell load"
+            ], 
+            [
+                "standard", 
+                "CR-100-16", 
+                "SC3Pv1 barnyard null cell load"
+            ], 
+            [
+                "standard", 
+                "CR-100-17", 
+                "SC3Pv1 GRCh38 gencode v24 annotation"
+            ], 
+            [
+                "standard", 
+                "CR-100-18", 
+                "SC3Pv1 GRCm38 gencode vM8 annotation"
+            ], 
+            [
+                "standard", 
+                "CR-100-19", 
+                "SC3Pv1 GRCh38 and GRCm38 barnyard"
+            ], 
+            [
+                "standard", 
+                "CR-100-20", 
+                "SC3Pv1 GRCh38 one gene annotation"
+            ], 
+            [
+                "standard", 
+                "CR-100-21", 
+                "SC3Pv1 mouse data rat ref UCSC converted annotation"
+            ], 
+            [
+                "standard", 
+                "CR-100-22", 
+                "SC3Pv1 b37 gencode v19 annotation"
+            ], 
+            [
+                "standard", 
+                "CR-100-23", 
+                "SC3Pv1 human PBMC 32k chr from hg19 transcripts"
+            ], 
+            [
+                "standard", 
+                "CR-100-24", 
+                "SC3Pv1 hg19 with 5 cross chromosome transcripts"
+            ], 
+            [
+                "standard", 
+                "CR-110-01", 
+                "SC3Pv1 VV 1200 Jurkat cells"
+            ], 
+            [
+                "standard", 
+                "CR-110-02", 
+                "SC3Pv1 VV 1200 HCC38 cells"
+            ], 
+            [
+                "standard", 
+                "CR-110-03", 
+                "SC3Pv1 VV 1200 PBMC cells"
+            ], 
+            [
+                "standard", 
+                "CR-110-04", 
+                "SC3Pv1 VV 1200 HEK293T human cells"
+            ], 
+            [
+                "standard", 
+                "CR-110-05", 
+                "SC3Pv1 VV 1200 3T3 mouse cells"
+            ], 
+            [
+                "standard", 
+                "CR-110-06", 
+                "SC3Pv1 VV 1200 barnyard"
+            ], 
+            [
+                "standard", 
+                "CR-110-07", 
+                "SC3Pv1 VV 1200 barnyard 59bp R1"
+            ], 
+            [
+                "standard", 
+                "CR-110-08", 
+                "SC3Pv1 VV 1200 barnyard 59bp R1"
+            ], 
+            [
+                "standard", 
+                "CR-110-09", 
+                "SC3Pv1 VV 3000 cells 9:1 Jurkat:293T"
+            ], 
+            [
+                "standard", 
+                "CR-110-10", 
+                "SC3Pv1 VV 12000 HEK293T human cells"
+            ], 
+            [
+                "standard", 
+                "CR-110-11", 
+                "SC3Pv1 VV 6000 barnyard"
+            ], 
+            [
+                "standard", 
+                "CR-110-12", 
+                "SC3Pv1 VV 4200 barnyard wet"
+            ], 
+            [
+                "standard", 
+                "CR-110-13", 
+                "SC3Pv1 VV 12000 HCC38 cells"
+            ], 
+            [
+                "standard", 
+                "CR-110-14", 
+                "SC3Pv1 VV 1200 barnyard meta sample"
+            ], 
+            [
+                "standard", 
+                "CR-110-15", 
+                "SC3Pv1 VV 100 PBMCs"
+            ], 
+            [
+                "standard", 
+                "CR-110-16", 
+                "SC3Pv1 VV 12000 PBMCs"
+            ], 
+            [
+                "standard", 
+                "CR-110-17", 
+                "SC3Pv1 Patient A meta sample (gem groups)"
+            ], 
+            [
+                "standard", 
+                "CR-110-18", 
+                "SC3Pv1 Barnyard 12000 cells 10 cycles"
+            ], 
+            [
+                "standard", 
+                "CR-110-19", 
+                "SC3Pv1 7000 Barnyard_10C cDNA amp x 10C SI PCR META"
+            ], 
+            [
+                "standard", 
+                "CR-110-20", 
+                "SC3Pv1 VV 1200 3T3 mouse cells 1.0 ref"
+            ], 
+            [
+                "standard", 
+                "CR-110-21", 
+                "SC3Pv1 VV 1200 barnyard 1.0 ref"
+            ], 
+            [
+                "standard", 
+                "CR-110-22", 
+                "SC3Pv1 VV 1200 Jurkat cells 1.0 ref"
+            ], 
+            [
+                "standard", 
+                "CR-110-23", 
+                "SC3Pv1 3T3 and 293T for bcldirect comparison hiseq"
+            ], 
+            [
+                "standard", 
+                "CR-110-24", 
+                "SC3Pv1 1200 frozen barnyard for bcldirect comparison miseq"
+            ], 
+            [
+                "standard", 
+                "CR-100-L1", 
+                "SC3Pv1 lena 13183"
+            ], 
+            [
+                "standard", 
+                "CR-100-L2", 
+                "SC3Pv1 lena 14054"
+            ], 
+            [
+                "standard", 
+                "CR-100-L3", 
+                "SC3Pv1 lena 14120"
+            ], 
+            [
+                "standard", 
+                "CR-100-L4", 
+                "SC3Pv1 lena 14151"
+            ], 
+            [
+                "standard", 
+                "CR-100-L5", 
+                "SC3Pv1 lena 15848"
+            ], 
+            [
+                "standard", 
+                "CR-100-L6", 
+                "SC3Pv1 lena 17820"
+            ], 
+            [
+                "standard", 
+                "CR-120-01", 
+                "SC3Pv2 SC3P-2.0 PBMC"
+            ], 
+            [
+                "standard", 
+                "CR-120-02", 
+                "SC3Pv2 barnyard 3T3 and 293T"
+            ], 
+            [
+                "standard", 
+                "CR-120-03", 
+                "SC3Pv2 PBMC using GRCh38 ref"
+            ], 
+            [
+                "standard", 
+                "CR-120-04", 
+                "SC3Pv2 barnyard 3T3 and 293T using GRCh38 ref"
+            ], 
+            [
+                "standard", 
+                "CR-120-05", 
+                "SC3Pv2 PBMC - determinism test"
+            ], 
+            [
+                "standard", 
+                "CR-120-06", 
+                "SC3Pv2 barnyard 3T3 and 293T - determinism test"
+            ], 
+            [
+                "standard", 
+                "CR-120-07", 
+                "SC3Pv2 10k mouse neurons 3pv2"
+            ], 
+            [
+                "standard", 
+                "CR-120-08", 
+                "SC3Pv2 human 1000 PBMCs 3pv2"
+            ], 
+            [
+                "standard", 
+                "CR-120-09", 
+                "SC3Pv2 Jurkat 3pv2"
+            ], 
+            [
+                "standard", 
+                "CR-120-10", 
+                "SC3Pv2 Barnyard 3pv2"
+            ], 
+            [
+                "standard", 
+                "CR-120-11", 
+                "SC3Pv2 human PBMC 3pv2 vs fruitfly ref"
+            ], 
+            [
+                "standard", 
+                "CR-120-12", 
+                "SC3Pv2 human PBMC vs yeast ref"
+            ], 
+            [
+                "standard", 
+                "CR-120-13", 
+                "SC3Pv2 human PBMC vs mouse ref"
+            ], 
+            [
+                "standard", 
+                "CR-120-14", 
+                "SC3Pv2 mouse neurons vs human ref"
+            ], 
+            [
+                "standard", 
+                "CR-120-15", 
+                "SC3Pv2 human PBMC vs human and mouse ref"
+            ], 
+            [
+                "standard", 
+                "CR-120-16", 
+                "SC3Pv2 mouse neurons vs human and mouse ref"
+            ], 
+            [
+                "standard", 
+                "CR-120-17", 
+                "SC3Pv2 ERCC"
+            ], 
+            [
+                "standard", 
+                "CR-120-18", 
+                "SC3Pv2 human PBMC mock ref with 180K genes"
+            ], 
+            [
+                "standard", 
+                "CR-120-19", 
+                "SC3Pv2 human PBMC null cell load"
+            ], 
+            [
+                "standard", 
+                "CR-120-20", 
+                "SC3Pv2 barnyard null cell load"
+            ], 
+            [
+                "standard", 
+                "CR-120-21", 
+                "SC3Pv2 GRCh38 gencode v24 annotation"
+            ], 
+            [
+                "standard", 
+                "CR-120-22", 
+                "SC3Pv2 GRCm38 gencode vM8 annotation"
+            ], 
+            [
+                "standard", 
+                "CR-120-23", 
+                "SC3Pv2 GRCh38 and GRCm38 barnyard"
+            ], 
+            [
+                "standard", 
+                "CR-120-24", 
+                "SC3Pv2 GRCh38 one gene annotation"
+            ], 
+            [
+                "standard", 
+                "CR-120-25", 
+                "SC3Pv2 mouse neurons rat ref UCSC converted annotation"
+            ], 
+            [
+                "standard", 
+                "CR-120-26", 
+                "SC3Pv2 b37 gencode v19 annotation"
+            ], 
+            [
+                "standard", 
+                "CR-120-27", 
+                "SC3Pv2 human PBMC 32k chr from hg19 transcripts"
+            ], 
+            [
+                "standard", 
+                "CR-120-28", 
+                "SC3Pv2 hg19 with 5 cross chromosome transcripts"
+            ], 
+            [
+                "standard", 
+                "CR-120-29", 
+                "SC3Pv2 mouse neurons miseq"
+            ], 
+            [
+                "standard", 
+                "CR-120-30", 
+                "SC3Pv1/v2 PBMC v1 and v2 metasample"
+            ], 
+            [
+                "standard", 
+                "CR-120-31", 
+                "SC3Pv2 mouse neurons metasample"
+            ], 
+            [
+                "standard", 
+                "CR-120-51", 
+                "SC3Pv1 mouse 3T3"
+            ], 
+            [
+                "standard", 
+                "CR-120-52", 
+                "SC3Pv1 mouse 3T3"
+            ], 
+            [
+                "standard", 
+                "CR-120-53", 
+                "SC3Pv1 human 293T"
+            ], 
+            [
+                "standard", 
+                "CR-120-54", 
+                "SC3Pv1 human 293T"
+            ], 
+            [
+                "standard", 
+                "CR-120-55", 
+                "SC3Pv1 human 293T"
+            ], 
+            [
+                "standard", 
+                "CR-120-56", 
+                "SC3Pv1 human PBMC metasample"
+            ], 
+            [
+                "standard", 
+                "CR-120-57", 
+                "SC3Pv1 human PBMC metasample"
+            ], 
+            [
+                "standard", 
+                "CR-120-58", 
+                "SC3Pv1 human equal mix Jurkat 293T"
+            ], 
+            [
+                "standard", 
+                "CR-120-59", 
+                "SC3Pv1 human equal mix Jurkat 293T"
+            ], 
+            [
+                "standard", 
+                "CR-120-60", 
+                "SC3Pv1 barnyard"
+            ], 
+            [
+                "standard", 
+                "CR-120-61", 
+                "SC3Pv1 barnyard"
+            ], 
+            [
+                "standard", 
+                "CR-120-62", 
+                "SC3Pv1 barnyard"
+            ], 
+            [
+                "standard", 
+                "CR-120-63", 
+                "SC3Pv1 barnyard wetting failure"
+            ], 
+            [
+                "standard", 
+                "CR-120-64", 
+                "SC3Pv1 barnyard wetting failure"
+            ], 
+            [
+                "standard", 
+                "CR-120-65", 
+                "SC3Pv2 mouse neurons"
+            ], 
+            [
+                "standard", 
+                "CR-120-66", 
+                "SC3Pv2 mouse neurons"
+            ], 
+            [
+                "standard", 
+                "CR-120-67", 
+                "SC3Pv2 mouse neurons"
+            ], 
+            [
+                "standard", 
+                "CR-120-68", 
+                "SC3Pv2 mouse neurons"
+            ], 
+            [
+                "standard", 
+                "CR-120-69", 
+                "SC3Pv2 mouse neurons"
+            ], 
+            [
+                "standard", 
+                "CR-120-70", 
+                "SC3Pv2 mouse neurons"
+            ], 
+            [
+                "standard", 
+                "CR-120-71", 
+                "SC3Pv2 mouse neurons"
+            ], 
+            [
+                "standard", 
+                "CR-120-72", 
+                "SC3Pv2 mouse neurons"
+            ], 
+            [
+                "standard", 
+                "CR-121-01", 
+                "SC3Pv2 mouse neurons 29662+29663 gem groups"
+            ], 
+            [
+                "standard", 
+                "CR-121-02", 
+                "SC3Pv2 mouse neurons 29662+29663+29664 gem groups"
+            ], 
+            [
+                "standard", 
+                "CR-121-03", 
+                "SC3Pv2 mouse neurons 29664+29665 gem groups"
+            ], 
+            [
+                "standard", 
+                "CR-130-01", 
+                "SC3Pv2 V&V barnyard 100"
+            ], 
+            [
+                "standard", 
+                "CR-130-02", 
+                "SC3Pv2 V&V barnyard 1K"
+            ], 
+            [
+                "standard", 
+                "CR-130-03", 
+                "SC3Pv2 V&V barnyard 6K"
+            ], 
+            [
+                "standard", 
+                "CR-130-04", 
+                "SC3Pv2 V&V barnyard 12K"
+            ], 
+            [
+                "standard", 
+                "CR-130-05", 
+                "SC3Pv2 V&V T-cells 100"
+            ], 
+            [
+                "standard", 
+                "CR-130-06", 
+                "SC3Pv2 V&V T-cells 1K"
+            ], 
+            [
+                "standard", 
+                "CR-130-07", 
+                "SC3Pv2 V&V T-cells 12K"
+            ], 
+            [
+                "standard", 
+                "CR-130-08", 
+                "SC3Pv2 V&V PBMC 5K"
+            ], 
+            [
+                "standard", 
+                "CR-130-09", 
+                "SC3Pv2 V&V PBMC 10K"
+            ], 
+            [
+                "standard", 
+                "CR-130-10", 
+                "SC3Pv2 V&V mouse neurons 100"
+            ], 
+            [
+                "standard", 
+                "CR-130-11", 
+                "SC3Pv2 V&V mouse neurons 12K"
+            ], 
+            [
+                "standard", 
+                "CR-130-12", 
+                "SC3Pv2 150x150"
+            ], 
+            [
+                "standard", 
+                "CR-200-01", 
+                "SC3Pv2 V&V T-cells 1K force 500 cells"
+            ], 
+            [
+                "standard", 
+                "CR-200-02", 
+                "SC3Pv2 V&V barnyard 100 force 50 cells"
+            ], 
+            [
+                "standard", 
+                "CR-200-03", 
+                "SC3Pv2 V&V T-cells 1K nosecondary"
+            ], 
+            [
+                "standard", 
+                "CR-200-04", 
+                "SC3Pv2 V&V barnyard 100 nosecondary"
+            ], 
+            [
+                "standard", 
+                "CR-201-01", 
+                "SC3Pv2 ERCC sacCer3 barnyard"
+            ], 
+            [
+                "standard", 
+                "CR-201-02", 
+                "SC3Pv2 novaseq barnyard"
+            ], 
+            [
+                "standard", 
+                "CR-201-03", 
+                "SC3Pv2 novaseq PBMCs"
+            ], 
+            [
+                "standard", 
+                "CR-210-01", 
+                "SC5P-PE pbmc 1K"
+            ], 
+            [
+                "standard", 
+                "CR-210-02", 
+                "SC5P-PE barnyard 1K"
+            ], 
+            [
+                "standard", 
+                "CR-210-03", 
+                "SC5P-PE pbmc 1K #2"
+            ], 
+            [
+                "standard", 
+                "CR-210-04", 
+                "SC5P-PE barnyard 10K #2"
+            ], 
+            [
+                "standard", 
+                "CR-210-05", 
+                "SC5P-R2 pbmc"
+            ], 
+            [
+                "standard", 
+                "CR-210-06", 
+                "6K B cells + 10% 12878"
+            ], 
+            [
+                "standard", 
+                "CR-210-07", 
+                "SC3Pv2 ERCC 1 gene only"
+            ],
+            [
+                "standard", 
+                "CR-211-01", 
+                "SC5Pv2 2.1B read metasample"
+            ],
+            [
+                "standard", 
+                "CR-211-02", 
+                "SC3Pv2 PBMC using pre-mRNA reference with chemistry specified"
+            ],
+            [
+                "standard", 
+                "CR-211-03", 
+                "SC3Pv2 PBMC using pre-mRNA reference and auto-chemistry detection"
+            ]
+        ], 
+        "Name": "Standard tests - count pipeline"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs_cum_frac": {
+                "Low": 0.8, 
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_assembly_contig_pair_productive_full_len_bc_frac": {
+                "Low": 0.54, 
+                "HumanName": "Cells With Productive V-J Spanning Pair"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_sequencing_efficiency": {
+                "Low": 0.3, 
+                "HumanName": "Sequencing Efficiency"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_all_vj_exact_no_extras_adjusted_paired_cdr_bc_frac": {
+                "Low": 0.98, 
+                "HumanName": "Cell sequence accuracy"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_good_bc_frac": {
+                "Low": 0.8, 
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/chemistry_name": {
+                "HumanName": "Chemistry"
+            }, 
+            "sampleid": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs": {
+                "HumanName": "Estimated Number of Cells"
+            }, 
+            "SHA": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_inferred_all_cdrs_detected_adjusted_paired_bc_frac": {
+                "Low": 0.9, 
+                "HumanName": "Inferred cell clonotype accuracy"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_recombinome_mapped_read_pairs_frac": {
+                "Low": 0.5, 
+                "HumanName": "Reads Mapped to Any V(D)J Gene"
+            }, 
+            "comments": {}, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_total_raw_read_pairs_per_filtered_bc": {
+                "Low": 5000, 
+                "HumanName": "Mean Read Pairs per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}
+        }, 
+        "TestDefList": [
+            [
+                "vdj", 
+                "CR-VDJ-200-01", 
+                "TR initial test"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-02", 
+                "TR mkfastq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-03", 
+                "TR mkfastq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-04", 
+                "TR T cells R&D"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-05", 
+                "TR EBV and TTL2 cells R&D"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-06", 
+                "TR reference with one gene only"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-07", 
+                "TR chromosome names chr"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-08", 
+                "TR reference mouse fa human genes"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-09", 
+                "TR reference with gene not in ref"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-10", 
+                "TR 72k reads stress test"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-11", 
+                "TR high reads per cell 18k"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-12", 
+                "TR T cells R&D force 600 cells"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-13", 
+                "TR pre-V&V Jurkat 6K_1"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-14", 
+                "TR pre-V&V Pan T 1K"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-15", 
+                "TR pre-V&V Pan T 10K"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-16", 
+                "TR pre-V&V Astarte-EBV:TLL (1:1) 1K"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-17", 
+                "TR pre-V&V PBMC 6K_1"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-18", 
+                "TR metasample of 70K Jurkat V&V cells"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-19", 
+                "TR initial test - determinism"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-20", 
+                "TR CDR4_mem 1"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-21", 
+                "TR CDR4_mem 2"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-22", 
+                "TR CDR4_mem 1 2 metasample"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-23", 
+                "TR CDR4_mem 1 2 metasample determinism"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-VV01", 
+                "TR V&V Jurkat 1000 miseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-VV02", 
+                "TR V&V PBMC 2000 nextseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-VV03", 
+                "TR V&V Pan T 10000 nextseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-VV04", 
+                "TR V&V Astarte-EBV:TTL 1:99 2000 nextseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-VV05", 
+                "TR V&V Astarte-EBV:TTL 99:1 2000 nextseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-VV06", 
+                "TR V&V Astarte-EBV 1000 hiseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-VV07", 
+                "TR V&V Astarte-EBV 10000 4kseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-VV08", 
+                "TR V&V Astarte-EBV:TTL 1:1 2000 4kseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-VV09", 
+                "TR V&V Astarte-EBV:TTL 1:9 2000 4kseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-VV10", 
+                "TR V&V CD4 2000 4kseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-200-VV11", 
+                "TR V&V CD8 2000 4kseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-201-01", 
+                "TR CD8 2000 novaseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-201-02", 
+                "TR CD8 2000 novaseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-01", 
+                "TR V&V CD4 2000 4kseq denovo no ref"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-02", 
+                "TR V&V CD4 2000 4kseq denovo with ref"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-03", 
+                "TR pbmc 1K SC5P VDJU"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-04", 
+                "TR pbmc 1K SC5P #2 VDJU"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-05", 
+                "IG B cells + 10% NA12878 spike-in VDJB"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-06", 
+                "TR pbmc 2k SC5P VDJU 2 gem groups metasample"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-15", 
+                "IG bcells_1k healthy donor novaseq"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-16", 
+                "IG bcells_10pct_na12878_1k novaseq #1"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-17", 
+                "IG bcells_10pct_na12878_10k novaseq #2"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-18", 
+                "IG B cells + 10% NA12878 spike-in VDJB denovo no ref"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-19", 
+                "IG B cells + 10% NA12878 spike-in VDJB denovo with ref"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-20", 
+                "TR tcells_1k from a healthy donor"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-21", 
+                "TR V&V Jurkat 1000 miseq - specify chain type"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-22", 
+                "IG bcells_1k healthy donor novaseq - specify chain type"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-23", 
+                "IG B cells + 10% NA12878 spike-in VDJB - specify all chains"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-24", 
+                "TR SCVDJ-R2 pan T cells isolated from mononuclear cells of a healthy donor"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-25", 
+                "IG CRC_S_1_UB"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-26", 
+                "TR CRC_S_1_UT"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-27", 
+                "IG CRC_S_1_B"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-28", 
+                "IG bad chimera rate 1"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-29", 
+                "IG bad chimera rate 2"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-32", 
+                "CRC_1_UB"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-33", 
+                "CRC_1_UT"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-34", 
+                "CRC_1_B"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-35", 
+                "CRC_2_UB"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-36", 
+                "CRC_2_UT"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-37", 
+                "CRC_2_B"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-40", 
+                "TR V&V Jurkat 1000 miseq - IGMT reference"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-41", 
+                "IG bcells_1k healthy donor novaseq - IGMT reference"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-42", 
+                "TR tcells_1k from a healthy donor determinism test"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-43", 
+                "SC3Pv2 V&V T-cells 1K run with VDJ"
+            ],
+            [
+                "vdj", 
+                "CR-VDJ-211-01", 
+                "TR R1 length=89"
+            ],
+            [
+                "vdj", 
+                "CR-VDJ-211-02", 
+                "TR R1 length=90"
+            ]
+        ],
+        "Name": "VDJ pipeline"
+    },
+    {
+        "LigoProject": {
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs_cum_frac": {
+                "Low": 0.8, 
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_assembly_contig_pair_productive_full_len_bc_frac": {
+                "Low": 0.54, 
+                "HumanName": "Cells With Productive V-J Spanning Pair"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_sequencing_efficiency": {
+                "Low": 0.3, 
+                "HumanName": "Sequencing Efficiency"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_all_vj_exact_no_extras_adjusted_paired_cdr_bc_frac": {
+                "Low": 0.98, 
+                "HumanName": "Cell sequence accuracy"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_good_bc_frac": {
+                "Low": 0.8, 
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/chemistry_name": {
+                "HumanName": "Chemistry"
+            }, 
+            "sampleid": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs": {
+                "HumanName": "Estimated Number of Cells"
+            }, 
+            "SHA": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_inferred_all_cdrs_detected_adjusted_paired_bc_frac": {
+                "Low": 0.9, 
+                "HumanName": "Inferred cell clonotype accuracy"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_recombinome_mapped_read_pairs_frac": {
+                "Low": 0.5, 
+                "HumanName": "Reads Mapped to Any V(D)J Gene"
+            }, 
+            "comments": {}, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_total_raw_read_pairs_per_filtered_bc": {
+                "Low": 5000, 
+                "HumanName": "Mean Read Pairs per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}
+        }, 
+        "TestDefList": [
+            [
+                "vdj", 
+                "CR-VDJ-210-38", 
+                "CRC_1_U - count as VDJ"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-39", 
+                "CRC_2_U - count as VDJ"
+            ]
+        ],
+        "Name": "VDJ pipeline - Quarantine"
+    },
+    {
+        "LigoProject": {
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs_cum_frac": {
+                "Low": 0.8, 
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_assembly_contig_pair_productive_full_len_bc_frac": {
+                "Low": 0.54, 
+                "HumanName": "Cells With Productive V-J Spanning Pair"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_sequencing_efficiency": {
+                "Low": 0.3, 
+                "HumanName": "Sequencing Efficiency"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_all_vj_exact_no_extras_adjusted_paired_cdr_bc_frac": {
+                "Low": 0.98, 
+                "HumanName": "Cell sequence accuracy"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_good_bc_frac": {
+                "Low": 0.8, 
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/chemistry_name": {
+                "HumanName": "Chemistry"
+            }, 
+            "sampleid": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs": {
+                "HumanName": "Estimated Number of Cells"
+            }, 
+            "SHA": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_inferred_all_cdrs_detected_adjusted_paired_bc_frac": {
+                "Low": 0.9, 
+                "HumanName": "Inferred cell clonotype accuracy"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_recombinome_mapped_read_pairs_frac": {
+                "Low": 0.5, 
+                "HumanName": "Reads Mapped to Any V(D)J Gene"
+            }, 
+            "comments": {}, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_total_raw_read_pairs_per_filtered_bc": {
+                "Low": 5000, 
+                "HumanName": "Mean Read Pairs per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}
+        }, 
+        "TestDefList": [
+            [
+                "vdj", 
+                "CR-VDJ-210-30", 
+                "TR 60K T-cells"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-31", 
+                "IG 100K B-cells"
+            ]
+        ],
+        "Name": "VDJ pipeline - stress"
+    },
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "custom", 
+                "CR-CUSTOM-25", 
+                "SC3Pv2 100 1:1 mixture of fresh frozen human and mouse cells"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-26", 
+                "SC3Pv2 1000 1:1 mixture of fresh frozen human and mouse cells"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-27", 
+                "SC3Pv2 6000 1:1 mixture of fresh frozen human and mouse cells"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-28", 
+                "SC3Pv2 12000 1:1 mixture of fresh frozen human and mouse cells"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-29", 
+                "SC3Pv2 4k PBMCs from a Healthy Donor"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-30", 
+                "SC3Pv2 8k PBMCs from a Healthy Donor"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-31", 
+                "SC3Pv2 9k brain cells from an E18 mouse"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-32", 
+                "SC3Pv2 3k Pan T from a Healthy Donor"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-33", 
+                "SC3Pv2 4k Pan T from a Healthy Donor"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-34", 
+                "SC3Pv2 1k brain cells from an E18 mouse"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-35", 
+                "SC3Pv2 1k brain nuclei from an adult mouse(>8weeks)"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-36", 
+                "SC3Pv2 2k brain nuclei from an adult mouse(>8weeks)"
+            ]
+        ], 
+        "Name": "Custom tests - count pipeline - public data"
+    },
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "custom", 
+                "CR-CUSTOM-61", 
+                "SCVDJ CRC_1_UB - VDJ as count"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-62", 
+                "SCVDJ CRC_1_UT - VDJ as count"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-63", 
+                "SCVDJ CRC_2_UB - VDJ as count"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-64", 
+                "SCVDJ CRC_2_UT - VDJ as count"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-67", 
+                "SCVDJ CRC_1_B - VDJ as count"
+            ], 
+            [
+                "custom", 
+                "CR-CUSTOM-68", 
+                "SCVDJ CRC_2_B - VDJ as count"
+            ]
+        ], 
+        "Name": "Custom tests - count pipeline - Quarantine"
+    },
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "aggregator", 
+                "CR-210-AR05", 
+                "t_3k and t_4k sc3pv2"
+            ]
+        ], 
+        "Name": "Aggr pipeline - public data"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs_cum_frac": {
+                "Low": 0.8, 
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_assembly_contig_pair_productive_full_len_bc_frac": {
+                "Low": 0.54, 
+                "HumanName": "Cells With Productive V-J Spanning Pair"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_sequencing_efficiency": {
+                "Low": 0.3, 
+                "HumanName": "Sequencing Efficiency"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_all_vj_exact_no_extras_adjusted_paired_cdr_bc_frac": {
+                "Low": 0.98, 
+                "HumanName": "Cell sequence accuracy"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_good_bc_frac": {
+                "Low": 0.8, 
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/chemistry_name": {
+                "HumanName": "Chemistry"
+            }, 
+            "sampleid": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs": {
+                "HumanName": "Estimated Number of Cells"
+            }, 
+            "SHA": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_inferred_all_cdrs_detected_adjusted_paired_bc_frac": {
+                "Low": 0.9, 
+                "HumanName": "Inferred cell clonotype accuracy"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_recombinome_mapped_read_pairs_frac": {
+                "Low": 0.5, 
+                "HumanName": "Reads Mapped to Any V(D)J Gene"
+            }, 
+            "comments": {}, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_total_raw_read_pairs_per_filtered_bc": {
+                "Low": 5000, 
+                "HumanName": "Mean Read Pairs per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}
+        }, 
+        "TestDefList": [
+            [
+                "vdj", 
+                "CR-VDJ-210-07", 
+                "TR pan T cells isolated from mononuclear cells of a healthy donor"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-08", 
+                "TR CD8+ cytotoxic T cells from mononuclear cells of a healthy donor"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-09", 
+                "TR CD4+ helper T cells from mononuclear cells of a healthy donor"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-10", 
+                "TR Peripheral blood mononuclear cells (PBMCs) from a healthy donor"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-11", 
+                "TR Jurkat-a lymphoblast cell line cultured in suspension"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-12", 
+                "TR Anti EBV specific T cells of a healthy donor"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-13", 
+                "TR Dissociated primary tumor cells from a clear cell renal carcinoma (CCRC)"
+            ], 
+            [
+                "vdj", 
+                "CR-VDJ-210-14", 
+                "TR Enriched CD3+ T cells of dissociated primary cells from a clear cell renal carcinoma (CCRC)"
+            ]
+        ], 
+        "Name": "VDJ pipeline - public data"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_REPORTS/multi_cdna_pcr_dupe_reads_frac": {
+                "HumanName": "Sequencing Saturation"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_total_raw_reads_per_filtered_bc": {
+                "HumanName": "Mean Reads per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/sample_index_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Sample Index"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_mean_count_purity": {
+                "HumanName": "Mean UMI Count Purity"
+            }, 
+            "/SUMMARIZE_REPORTS/good_umi_frac": {
+                "HumanName": "Valid UMIs"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_transcriptome_union": {
+                "HumanName": "Number of Cells"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}, 
+            "/SUMMARIZE_REPORTS/multi_intergenic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intergenic Regions"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_transcriptome_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Transcriptome"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_intronic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Intronic Regions"
+            }, 
+            "sampleid": {}, 
+            "comments": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_counts": {
+                "HumanName": "GRCh38 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": {
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_REPORTS/umi_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in UMI"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "mm10 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read2_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 2"
+            }, 
+            "/SUMMARIZE_REPORTS/mm10_multi_filtered_bcs_median_counts": {
+                "HumanName": "mm10 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_multi_filtered_bcs_median_counts": {
+                "HumanName": "hg19 Median UMI Counts per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/GRCh38_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "SHA": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_REPORTS/total_reads": {
+                "HumanName": "Number of Reads"
+            }, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/SUMMARIZE_REPORTS/GRCh38_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "GRCh38 Median Genes per Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/hg19_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes per Cell"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_REPORTS/hg19_raw_rpc_20000_subsampled_filtered_bcs_median_unique_genes_detected": {
+                "HumanName": "hg19 Median Genes Detected at 20k raw reads per cell"
+            }, 
+            "/SUMMARIZE_REPORTS/read_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Read 1"
+            }, 
+            "/SUMMARIZE_REPORTS/filtered_bcs_inferred_multiplet_rate": {
+                "HumanName": "Fraction GEMs with >1 Cell"
+            }, 
+            "/SUMMARIZE_REPORTS/good_bc_frac": {
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_REPORTS/multi_exonic_conf_mapped_reads_frac": {
+                "HumanName": "Reads Mapped Confidently to Exonic Regions"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_REPORTS/bc_bases_with_q30_frac": {
+                "HumanName": "Q30 Bases in Barcode"
+            }
+        }, 
+        "TestDefList": [
+            [
+                "dev", 
+                "hgmm_100", 
+                ""
+            ], 
+            [
+                "dev", 
+                "hgmm_100_micro", 
+                "hgmm_100 cells at 100 reads/cell"
+            ], 
+            [
+                "dev", 
+                "pbmc4k_tiny", 
+                "pbmc4k 100 cells at 20k reads/cell"
+            ], 
+            [
+                "dev", 
+                "pbmc4k_micro", 
+                "pbmc4k 100 cells at 100 reads/cell"
+            ], 
+            [
+                "dev", 
+                "pbmc4k_tiny_mkfastq", 
+                "pbmc4k mkfastq first few reads"
+            ], 
+            [
+                "dev", 
+                "sim_1bc_1chain_1umi_noerr", 
+                "sim_1bc_1chain_1umi_noerr"
+            ], 
+            [
+                "dev", 
+                "pbmc1k_5p_tiny", 
+                "pbmc1k_5p 100 cells at 20k reads/cell"
+            ], 
+            [
+                "dev", 
+                "pbmc1k_5p_micro", 
+                "pbmc1k_5p 100 cells at 100 reads/cell"
+            ], 
+            [
+                "dev", 
+                "36426_bulk_micro", 
+                ""
+            ]
+        ], 
+        "Name": "Dev tests - GEX"
+    }, 
+    {
+        "LigoProject": {
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs_cum_frac": {
+                "Low": 0.8, 
+                "HumanName": "Fraction Reads in Cells"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_assembly_contig_pair_productive_full_len_bc_frac": {
+                "Low": 0.54, 
+                "HumanName": "Cells With Productive V-J Spanning Pair"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_sequencing_efficiency": {
+                "Low": 0.3, 
+                "HumanName": "Sequencing Efficiency"
+            }, 
+            "success": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_all_vj_exact_no_extras_adjusted_paired_cdr_bc_frac": {
+                "Low": 0.98, 
+                "HumanName": "Cell sequence accuracy"
+            }, 
+            "/_perf/0/forks/0/fork_stats/total_files": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_good_bc_frac": {
+                "Low": 0.8, 
+                "HumanName": "Valid Barcodes"
+            }, 
+            "/SUMMARIZE_VDJ_REPORTS/chemistry_name": {
+                "HumanName": "Chemistry"
+            }, 
+            "sampleid": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_filtered_bcs": {
+                "HumanName": "Estimated Number of Cells"
+            }, 
+            "SHA": {}, 
+            "/SUMMARIZE_VDJ_ASM_REPORTS_PD/vdj_assembly_gt_clonotype_inferred_all_cdrs_detected_adjusted_paired_bc_frac": {
+                "Low": 0.9, 
+                "HumanName": "Inferred cell clonotype accuracy"
+            }, 
+            "/_perf/0/maxbytes": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/multi_vdj_recombinome_mapped_read_pairs_frac": {
+                "Low": 0.5, 
+                "HumanName": "Reads Mapped to Any V(D)J Gene"
+            }, 
+            "comments": {}, 
+            "/_lena/sample_bag/cell_line/name": {}, 
+            "/_perf/0/forks/0/fork_stats/maxrss": {}, 
+            "/SUMMARIZE_VDJ_REPORTS/vdj_total_raw_read_pairs_per_filtered_bc": {
+                "Low": 5000, 
+                "HumanName": "Mean Read Pairs per Cell"
+            }, 
+            "/_perf/0/forks/0/fork_stats/core_hours": {}
+        }, 
+        "TestDefList": [
+            [
+                "dev", 
+                "vdj_tiny", 
+                "vdj 100 cells"
+            ], 
+            [
+                "dev", 
+                "vdj_micro", 
+                "vdj 100 cells at 100 readpairs/cell"
+            ], 
+            [
+                "dev", 
+                "vdj_micro_2channel", 
+                "vdj 2 channels 100 readpairs/cell"
+            ], 
+            [
+                "dev", 
+                "vdj_mix_tiny", 
+                "vdj EBV-TTL2 50-50 mix 100 cells"
+            ], 
+            [
+                "dev", 
+                "vdj_bulk_micro", 
+                "vdj bulk"
+            ], 
+            [
+                "dev", 
+                "vdj_hidepth_tiny", 
+                "vdj hidepth 20 cells"
+            ], 
+            [
+                "dev", 
+                "vdj_jurkat_tiny", 
+                "vdj jurkat 100 cells"
+            ], 
+            [
+                "dev", 
+                "vdj_bcell_tiny", 
+                "vdj 100 B cells"
+            ]
+        ], 
+        "Name": "Dev tests - VDJ"
+    }
+]

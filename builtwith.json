@@ -1,0 +1,15 @@
+{
+    "uname": "Linux jenkins-build-1.fuzzplex.com 4.9.32-15.41.amzn1.x86_64 #1 SMP Thu Jun 22 06:20:54 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux", 
+    "buildtools": {
+        "node": "v6.11.2", 
+        "gcc": "clang version 4.0.1 (tags/RELEASE_401/final 307485)", 
+        "git": "git version 2.7.5", 
+        "cmake": "cmake version 3.9.1", 
+        "go": "go version go1.9 linux/amd64", 
+        "make": "GNU Make 3.82", 
+        "ar": "GNU ar (GNU Binutils) 2.29", 
+        "rust": "rustc 1.19.0 (0ade33941 2017-07-17)"
+    }, 
+    "toolchain": "1.0.3", 
+    "cpu": "Intel(R) Xeon(R) CPU E5-2666 v3 @ 2.90GHz"
+}

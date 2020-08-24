@@ -1,0 +1,12 @@
+#!/bin/bash
+# This script is a stub that writes an empty file.
+n=$#
+for ((i=1 ; i <= n ; i++)); do
+    if [ "$1" = "--output" ]; then
+	shift
+	echo "Creating $1"
+	touch "$1"
+	break
+    fi
+    shift
+done

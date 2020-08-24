@@ -1,0 +1,372 @@
+#
+# Copyright (c) 2017 10X Genomics, Inc. All rights reserved.
+#
+filetype bam;
+filetype bam.bai;
+filetype sam;
+filetype fasta;
+filetype fasta.fai;
+filetype fastq;
+filetype h5;
+filetype json;
+filetype pickle;
+filetype gtf;
+filetype csv;
+filetype tsv;
+filetype html;
+filetype bed;
+
+stage VDJ_PREFLIGHT(
+    in  map[]  sample_def,
+    in  string chemistry_name,
+    in  map    custom_chemistry_def,
+    in  path   vdj_reference_path,
+    in  bool   denovo,
+    in  bool   check_executables,
+    in  int    force_cells,
+    in  string chain_type,
+    src py     "stages/vdj/vdj_preflight",
+)
+
+stage VDJ_PREFLIGHT_LOCAL(
+    in  map[]  sample_def,
+    in  string chemistry_name,
+    in  map    custom_chemistry_def,
+    in  path   vdj_reference_path,
+    in  bool   denovo,
+    in  bool   check_executables,
+    in  int    force_cells,
+    in  string chain_type,
+    src py     "stages/vdj/vdj_preflight",
+)
+
+stage CORRECT_BARCODES(
+    in  fastq[] read1s,
+    in  fastq[] read2s,
+    in  int[]   gem_groups,
+    in  json    barcode_counts,
+    in  float   barcode_confidence_threshold,
+    in  string  barcode_whitelist,
+    in  int     initial_reads,
+    in  map     chemistry_def,
+    out tsv[]   corrected_bcs,
+    out json    corrected_barcode_counts,
+    out pickle  chunked_reporter,
+    out json    summary,
+    out h5      barcode_summary,
+    src py      "stages/vdj/correct_barcodes",
+) split using (
+    in  fastq   read1_chunk,
+    in  fastq   read2_chunk,
+    in  int     gem_group,
+)
+
+stage SUMMARIZE_VDJ_READ_REPORTS(
+    in  json     extract_reads_summary,
+    in  json     correct_barcodes_summary,
+    in  json     raw_barcode_counts,
+    in  json     corrected_barcode_counts,
+    in  h5       barcode_summary,
+    in  int[]    gem_groups,
+    in  string[] read_groups,
+    in  map      align,
+    in  string[] bam_comments,
+    in  fastq[]  read1s,
+    in  fastq[]  read2s,
+    in  tsv[]    corrected_bcs,
+    in  bool     retain_fastqs,
+    in  json     trim_reads_summary,
+    in  map      chemistry_def,
+    out json     summary,
+    out json     raw_barcode_counts,
+    out json     corrected_barcode_counts,
+    out h5       barcode_summary,
+    out int[]    gem_groups,
+    out string[] read_groups,
+    out map      align,
+    out string[] bam_comments,
+    out fastq[]  read1s,
+    out fastq[]  read2s,
+    out tsv[]    corrected_bcs,
+    src py       "stages/vdj/summarize_read_reports",
+) split using (
+    in  fastq    read1,
+    in  fastq    read2,
+    in  tsv      bcs,
+)
+
+stage FILTER_VDJ_READS(
+    in  path    vdj_reference_path,
+    in  fastq[] read1s                   "Per-chunk fastqs",
+    in  fastq[] read2s                   "Per-chunk fastqs",
+    in  json[]  chunk_barcodes           "Per-chunk barcodes",
+    in  map     chemistry_def,
+    in  map     sw_params                "Params for SW alignment (seed, min_sw_score)",
+    in  int     min_readpairs_per_umi,
+    out pickle  chunked_reporter,
+    out pickle  chunked_gene_umi_counts,
+    out bam[]   barcode_chunked_bams,
+    out json[]  barcodes_in_chunks,
+    out tsv[]   reads_per_bc,
+    out json    summary,
+    out h5      umi_info,
+    src py      "stages/vdj/filter_vdj_reads",
+) split using (
+    in  fastq   read1_chunk,
+    in  fastq   read2_chunk,
+    in  json    barcodes_chunk,
+)
+
+stage FILTER_UMIS(
+    in  h5     umi_info,
+    in  path   vdj_reference_path,
+    in  int[]  gem_groups,
+    in  int    target_n50,
+    out pickle chunked_reporter,
+    out json   summary,
+    src py     "stages/vdj/filter_umis",
+) split using (
+    in  int    gem_group,
+    in  int    start_row,
+    in  int    end_row,
+)
+
+stage BUCKET_FASTQ_BY_BC(
+    in  fastq[] read1s,
+    in  fastq[] read2s,
+    in  tsv[]   corrected_bcs,
+    in  int[]   gem_groups,
+    in  json    reads_summary,
+    in  int     readpairs_per_chunk,
+    in  map     chemistry_def,
+    out map[]   buckets,
+    src py      "stages/vdj/bucket_fastq_by_bc",
+) split using (
+    in  fastq   read1s_chunk,
+    in  fastq   read2s_chunk,
+    in  tsv     bcs,
+    in  map     chunks_per_gem_group,
+)
+
+stage GROUP_FASTQ_BY_BC(
+    in  map[]   buckets,
+    in  map     chemistry_def,
+    out fastq[] read1s,
+    out fastq[] read2s,
+    out int[]   chunk_gem_groups,
+    out json[]  chunk_barcodes,
+    src py      "stages/vdj/group_fastq_by_bc",
+) split using (
+    in  string  bucket_name,
+    in  int     gem_group,
+    in  fastq[] fastqs,
+)
+
+stage ASSEMBLE_VDJ(
+    in  map       chemistry_def,
+    in  bam[]     barcode_chunked_bams   "reads split by barcode for chunking",
+    in  int[]     chunk_gem_groups,
+    in  tsv[]     reads_per_bc,
+    in  int       mem_gb,
+    in  int       min_kmer_count         "min number of UMIs in which a kmer occurs to consider it",
+    in  int       min_contig_len         "min length of output sequences",
+    in  int       min_qual               "min extension quality to consider a branch",
+    in  float     score_factor           "assign UMIs to sequences with score_factor * best_umi_path_score",
+    in  float     qual_factor            "consider branches with qual_factor * best extension quality",
+    in  float     min_sw_score           "min SW score for read-contig alignments",
+    in  int       min_readpairs_per_umi  "min readpairs/UMI (absolute count)",
+    in  float     rt_error               "RT error for base qual computation",
+    in  bool      use_unmapped           "Use unmapped reads in input",
+    out fasta     contig_fasta,
+    out fasta.fai contig_fasta_fai,
+    out fastq     contig_fastq,
+    out bam       contig_bam,
+    out bam.bai   contig_bam_bai,
+    out tsv       summary_tsv,
+    out tsv       umi_summary_tsv,
+    out json      metrics_summary_json,
+    src py        "stages/vdj/assemble_vdj",
+) split using (
+    in  bam       chunked_bam,
+    in  int       gem_group,
+)
+
+stage FILTER_BARCODES_VDJ(
+    in  json   barcode_counts,
+    in  json   extract_reads_summary,
+    in  int[]  gem_groups,
+    in  string barcode_whitelist,
+    in  int    recovered_cells,
+    in  int    force_cells,
+    in  h5     umi_info,
+    in  int    min_readpairs_per_umi  "Loose threshold used in assembly",
+    out json   cell_barcodes,
+    out csv    barcode_support,
+    out json   summary,
+    out csv    barcode_umi_summary,
+    src py     "stages/vdj/filter_barcodes_vdj",
+) split using (
+)
+
+stage REPORT_CONTIG_ALIGNMENTS(
+    in  bam      contig_bam,
+    in  json[]   barcodes_in_chunks,
+    in  map      chemistry_def,
+    out pickle   chunked_reporter,
+    out json     summary,
+    src py       "stages/vdj/report_contig_alignments",
+) split using (
+    in  string[] contigs,
+)
+
+stage ANNOTATE_CONTIGS(
+    in  path   vdj_reference_path,
+    in  fasta  contigs,
+    in  fastq  contigs_fastq,
+    in  json[] barcodes_in_chunks,
+    in  map[]  primers,
+    in  csv    filter_summary,
+    in  tsv    contig_summary,
+    in  map    min_score_ratios     "dict of min score ratios by feature type to use for filtering annotations",
+    in  map    min_word_sizes       "dict of min word sizes by feature type to use for filtering annotations",
+    in  json   cell_barcodes,
+    out pickle chunked_annotations,
+    out json   annotations          "Annotations for filtered contigs",
+    out json   raw_annotations      "Annotations for all contigs",
+    out bed    annotations_bed      "BED for IGV",
+    out csv    annotations_csv,
+    src py     "stages/vdj/annotate_contigs",
+) split using (
+    in  json   barcodes,
+)
+
+stage REPORT_CONTIGS(
+    in  path   vdj_reference_path,
+    in  json   cell_barcodes,
+    in  fasta  contigs,
+    in  json   annotations,
+    in  csv    filter_summary,
+    in  tsv    contig_summary,
+    in  tsv    umi_summary,
+    in  json   reads_summary,
+    in  json   assemble_metrics_summary,
+    out string chain_type,
+    out json   summary,
+    src py     "stages/vdj/report_contigs",
+) split using (
+)
+
+stage SUMMARIZE_VDJ_REPORTS(
+    in  string sample_id,
+    in  string sample_desc,
+    in  path   vdj_reference_path,
+    in  string barcode_whitelist,
+    in  int[]  gem_groups,
+    in  json   reads_summary,
+    in  json   filter_umis_summary,
+    in  json   filter_barcodes_summary,
+    in  json   trim_reads_summary,
+    in  json   filter_reads_summary,
+    in  json   filter_contigs_summary,
+    in  json   report_contigs_summary,
+    in  json   report_contig_alignments_summary,
+    in  json   group_clonotypes_summary,
+    in  json   raw_consensus_summary,
+    in  h5     barcode_summary,
+    in  json   cell_barcodes,
+    in  csv    barcode_umi_summary,
+    in  h5     umi_info,
+    in  csv    clonotype_summary,
+    in  csv    barcode_support,
+    in  string chain_type_spec                   "Specified chain type",
+    in  string chain_type_auto                   "Detected chain type",
+    out json   metrics_summary_json,
+    out csv    metrics_summary_csv,
+    out html   web_summary,
+    out json   alerts,
+    out h5     barcode_summary,
+    out json   cell_barcodes,
+    out csv    barcode_support,
+    out csv    barcode_umi_summary,
+    out h5     umi_info,
+    src py     "stages/vdj/summarize_reports",
+) split using (
+)
+
+stage TRIM_READS(
+    in  fastq[] read1s,
+    in  fastq[] read2s,
+    in  map[]   primers,
+    in  map     chemistry_def,
+    out fastq[] read1s,
+    out fastq[] read2s,
+    out json    summary,
+    out pickle  chunked_reporter,
+    src py      "stages/vdj/trim_reads",
+) split using (
+    in  fastq   read1s_chunk,
+    in  fastq   read2s_chunk,
+)
+
+stage ASSEMBLE_CONSENSUS(
+    in  path      vdj_reference_path,
+    in  map[]     primers,
+    in  string    metric_prefix                "to prefix summary metrics (eg. if you're running for raw and inferred clonotypes)",
+    in  json      annotations_json             "contig annotations",
+    in  json      clonotype_assignments,
+    in  tsv       umi_summary_tsv,
+    in  fastq     contigs_fastq,
+    in  bam       contig_bam,
+    in  map       min_score_ratios             "dict of min score ratios by feature type to use for filtering annotations",
+    in  map       min_word_sizes               "dict of min word sizes by feature type to use for filtering annotations",
+    out pickle    chunked_reporter,
+    out bam[]     chunked_consensus_bams,
+    out bam[]     chunked_concat_ref_bams,
+    out bam       consensus_bam,
+    out bam.bai   consensus_bam_bai,
+    out bam       concat_ref_bam,
+    out bam.bai   concat_ref_bam_bai,
+    out json      consensus_annotations_json,
+    out json      concat_ref_annotations_json,
+    out fasta     consensus_fasta,
+    out fastq     consensus_fastq,
+    out fasta.fai consensus_fasta_fai,
+    out fasta     concat_ref_fasta,
+    out fasta.fai concat_ref_fasta_fai,
+    out csv       consensus_annotations_csv,
+    out json      summary,
+    out csv       clonotypes                   "info about clonotypes",
+    src py        "stages/vdj/assemble_consensus",
+) split using (
+    in  string[]  chunk_clonotypes,
+    in  json      chunk_annotations,
+)
+
+stage FILTER_CONTIGS(
+    in  path  vdj_reference_path,
+    in  fasta contig_fasta,
+    in  fastq contig_fastq,
+    in  json  contig_annotations,
+    out fasta filtered_contig_fasta,
+    out fastq filtered_contig_fastq,
+    out json  contig_annotations,
+    out json  summary,
+    src py    "stages/vdj/filter_contigs",
+) split using (
+)
+
+stage GROUP_CLONOTYPES(
+    in  path   vdj_reference_path,
+    in  json   cell_barcodes,
+    in  json   annotations,
+    in  bool   use_non_productive               "use non-productive CDR sequences in clonotype definitions",
+    in  bool   use_non_full_len                 "use CDR3s from non-full-length contigs",
+    out json   summary,
+    out json   clonotype_assignments            "info about clonotypes",
+    out json   contig_annotations               "input annotations updated with clonotype assignment info",
+    out csv    contig_annotations_csv           "input annotations updated with clonotype assignment info (CSV)",
+    out pickle contig_annotations_pickle        "input annotations updated with clonotype assignment info (pickle)",
+    out csv    filtered_contig_annotations_csv  "high-confidence contig annotations w/ clonotype info",
+    src py     "stages/vdj/group_clonotypes",
+) split using (
+)

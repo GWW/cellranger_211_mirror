@@ -1,0 +1,179 @@
+#!/usr/bin/env python
+# Downloads IMGT sequences and creates a FASTA file suitable
+#   for input into `cellranger mkvdjref --seqs`.
+#
+# Creates two files:
+#  <prefix>-imgt-raw.fasta
+#  <prefix>-mkvdjref-input.fasta
+# Where <prefix> is the string given via the --genome arg,
+#   *-imgt-raw is the IMGT segments translated to FASTA,
+#   and *-mkvdjref-input is in the format expected by `cellranger mkvdjref --seqs`
+#
+# NOTE: Writes several downloaded HTML files to the current working dir.
+
+import argparse
+from Bio import SeqIO
+from collections import OrderedDict
+import cStringIO
+from lxml import html
+import itertools
+import os
+import re
+import requests
+import sys
+import time
+import cellranger.vdj.constants as vdj_constants
+import cellranger.vdj.reference as vdj_reference
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--genome', help='V(D)J reference package name, e.g., my-vdj-ref', required=True)
+parser.add_argument('--species', default='Homo sapiens', help='IMGT species to fetch; e.g. \'Homo sapiens\' (note capitalization and quotes)')
+args = parser.parse_args()
+
+IMGT_GENEDB_URL = 'http://www.imgt.org/genedb/GENElect'
+
+# IMGT GENE-DB queries
+v_genes = ['TRAV', 'TRBV', 'TRDV', 'TRGV', 'IGHV', 'IGKV', 'IGLV']
+v_label = 'L-PART1 V-EXON' # let requests turn the ' ' into a '+'
+v_query = '8.1'
+
+d_genes = ['TRBD', 'TRDD', 'IGHD']
+d_label = None
+d_query = '7.2'
+
+j_genes = ['TRAJ', 'TRBJ', 'IGHJ', 'IGKJ', 'IGLJ']
+j_label = None
+j_query = '7.2'
+
+c_genes = ['TRAC', 'TRBC', 'TRDC', 'TRGC', 'IGHC', 'IGKC', 'IGLC']
+c_label = None
+c_query = '14.1'
+
+
+queries = list(itertools.chain(itertools.product(v_genes, [v_label], [v_query]),
+                               itertools.product(d_genes, [d_label], [d_query]),
+                               itertools.product(j_genes, [j_label], [j_query]),
+                               itertools.product(c_genes, [c_label], [c_query])))
+
+# Download the sequences, e.g.
+# http://www.imgt.org/genedb/GENElect?query=8.1+TRBV&species=Homo+sapiens&IMGTlabel=L-PART1+V-EXON
+
+ok = True
+filenames = []
+try:
+    for gene, label, number in queries:
+        filename = '_'.join((args.species.replace(' ', ''), number, gene)) + '.html'
+        filenames.append(filename)
+        if os.path.exists(filename):
+            print 'Already downloaded %s, skipping' % filename
+            continue
+
+        # Note: IMGT is sensitive to the param order
+        payload = OrderedDict([('query', '%s %s' % (number, gene),),
+                               ('species', args.species),
+        ])
+
+        if label:
+            payload['IMGTlabel'] = label
+
+        r = requests.get(IMGT_GENEDB_URL, params=payload.items())
+
+        # Get the original url (pre-redirect)
+        if len(r.history) > 0:
+            used_url = r.history[0].url
+        else:
+            used_url = r.url
+
+        print 'Downloading %s to %s ...' % (used_url, filename)
+
+        r.raise_for_status()
+        with open(filename, 'w') as f:
+            f.write(r.text)
+
+        # Don't hammer the server
+        time.sleep(5)
+
+except requests.exceptions.RequestException as e:
+    print 'Failed to download from IMGT. %s\n' % e
+    ok = False
+
+if not ok:
+    print "Failed to download all files from IMGT. Exiting."
+    sys.exit(1)
+
+# Parse the HTML files
+def get_region_type(imgt_label):
+    """ Convert IMGT labels into CR region type strings """
+    if imgt_label == 'L-PART1+V-EXON':
+        return 'L-REGION+V-REGION'
+    elif imgt_label in ('J-REGION', 'D-REGION'):
+        return imgt_label
+    elif 'EX' in imgt_label or 'CH' in imgt_label or 'CL' in imgt_label or 'M' in imgt_label:
+        return 'C-REGION'
+    else:
+        return None
+
+def infer_imgt_vdj_chain_type(gene_name):
+    """ Infer e.g., TR or IG from the IMGT gene name """
+    return gene_name[0:2]
+
+def infer_imgt_vdj_chain(gene_name):
+    """ Infer e.g., TRA or IGH from the IMGT gene name """
+    return gene_name[0:3]
+
+def infer_imgt_isotype(gene_name):
+    """ Infer, e.g., E from IGHE """
+    if len(gene_name) <= 3:
+        return None
+    return re.sub('[*].*$', '', gene_name)[3:]
+
+def infer_imgt_allele(gene_name):
+    a = re.sub('^.*[*]', '', gene_name)
+    return a if len(a) > 0 else None
+
+
+fid = 0
+# Write IMGT fasta to a file
+with open(args.genome + '-imgt-raw.fasta', 'w') as raw_imgt_fa, \
+     open(args.genome + '-mkvdjref-input.fasta', 'w') as mkvdjref_fa:
+    for filename in filenames:
+        tree = html.parse(filename)
+
+        fa_txt = tree.xpath('//pre')[-1].text
+        raw_imgt_fa.write(fa_txt + '\n')
+
+        f = cStringIO.StringIO(str(fa_txt))
+        for record in SeqIO.parse(f, 'fasta'):
+            fid += 1
+            row = record.description.split('|')
+
+            region_type = get_region_type(row[4])
+            if region_type is None:
+                print 'Warning: Unrecognized IMGT region type: %s; skipping...' % row[4]
+                continue
+
+            chain_type = infer_imgt_vdj_chain_type(row[1])
+            chain = infer_imgt_vdj_chain(row[1])
+
+            if region_type in vdj_constants.VDJ_C_FEATURE_TYPES and \
+               chain in vdj_constants.CHAINS_WITH_ISOTYPES:
+                isotype = infer_imgt_isotype(row[1])
+            else:
+                isotype = None
+
+            gene_name = re.sub('[*].*$', '', row[1])
+            allele_name = infer_imgt_allele(row[1])
+
+            feature = vdj_reference.VdjAnnotationFeature(
+                feature_id=fid,
+                record_id=row[0],
+                display_name=row[1],
+                gene_name=gene_name,
+                region_type=region_type,
+                chain_type=chain_type,
+                chain=chain,
+                isotype=isotype,
+                allele_name=allele_name,
+                sequence=record.seq.upper())
+
+            mkvdjref_fa.write(vdj_reference.convert_vdj_feature_to_fasta_entry(feature) + '\n')
